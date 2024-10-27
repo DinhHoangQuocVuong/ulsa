@@ -38,3 +38,23 @@ Shopping Cart Application là một ứng dụng thương mại điện tử đ�
    ```bash
    git clone https://github.com/username/repo.git
    cd repo
+2.Cấu hình MySQL:
+
+Tạo cơ sở dữ liệu ecommerce_db.
+Cập nhật thông tin kết nối trong file application.properties:
+properties
+
+Copy
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce_db
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=password
+3.Chạy ứng dụng:
+
+bash
+
+Copy
+mvn spring-boot:run
+4.Truy cập ứng dụng:
+
+Mở trình duyệt và điều hướng đến: http://localhost:8080
